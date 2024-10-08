@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to Our Hospital</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<style>
+		body {
+			background-color: #f4f4f9; /* Light grey background */
+			color: #333; /* Dark text for contrast */
+		}
+		header, footer {
+			background-color: #0056b3; /* Dark blue for header and footer */
+			color: white;
+		}
+		.button {
+			background-color: #007bff; /* Button color */
+			color: white; /* Button text color */
+			padding: 10px 20px;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+		.button:hover {
+			background-color: #0056b3; /* Darken button on hover */
+		}
+		.contact-icons {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+		.contact-icons a {
+			background-color: #007bff;
+			color: white;
+			border-radius: 50%;
+			padding: 15px;
+			text-align: center;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			transition: background-color 0.3s;
+		}
+		.contact-icons a:hover {
+			background-color: #0056b3; /* Darken on hover */
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Welcome to Our Hospital</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="appointment.html">Book Appointment</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; text-align: center;">
+		<!-- Slideshow Section -->
+		<section id="slideshow" style="margin-bottom: 20px;">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="slide 1.jpeg" style="width:100%">
+					<div class="text">Compassionate Care</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="slide 2.jpeg" style="width:100%">
+					<div class="text">State-of-the-Art Facilities</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="slide 3.jpeg" style="width:100%">
+					<div class="text">Expert Medical Staff</div>
+				</div>
+			</div>
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</section>
+
+		<!-- Welcome Message -->
+		<section id="welcome" style="margin-bottom: 20px;">
+			<h2>Your Health is Our Priority</h2>
+			<p>At Our Hospital, we are dedicated to providing high-quality healthcare services tailored to meet the needs of our patients. Our compassionate staff and state-of-the-art facilities ensure that you receive the best care possible.</p>
+		</section>
+
+		<!-- Services Highlights -->
+		<section id="services-highlights" style="margin-bottom: 20px;">
+			<h2>Our Services</h2>
+			<ul>
+				<li>24/7 Emergency Care</li>
+				<li>General and Specialized Surgery</li>
+				<li>Maternity and Pediatric Services</li>
+				<li>Diagnostic Imaging and Lab Services</li>
+				<li>Rehabilitation Services</li>
+			</ul>
+		</section>
+
+		<!-- Testimonials Section -->
+		<section id="testimonials" style="margin-bottom: 20px;">
+			<h2>What Our Patients Say</h2>
+			<blockquote>
+				<p>"The staff was incredibly supportive and attentive. I felt cared for every step of the way!"</p>
+				<cite>- Sarah J.</cite>
+			</blockquote>
+			<blockquote>
+				<p>"A wonderful experience! The facilities are top-notch and the doctors are very knowledgeable."</p>
+				<cite>- Michael T.</cite>
+			</blockquote>
+		</section>
+
+		<!-- Latest News Section -->
+		<section id="latest-news" style="margin-bottom: 20px;">
+			<h2>Latest News</h2>
+			<ul>
+				<li><strong>Health Tips:</strong> Stay hydrated and maintain a balanced diet for better health.</li>
+				<li><strong>Upcoming Events:</strong> Join our health awareness seminar next month.</li>
+				<li><strong>New Services:</strong> We are now offering telehealth consultations!</li>
+			</ul>
+		</section>
+
+		<!-- Quick Links Section -->
+		<section id="quick-links" style="margin-bottom: 20px;">
+			<h2>Quick Links</h2>
+			<ul>
+				<li><a href="appointment.html">Book Appointment</a></li>
+				<li><a href="about.html">Learn About Us</a></li>
+				<li><a href="services.html">View Our Services</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</section>
+
+		<!-- Meet Our Team Section -->
+		<section id="meet-our-team">
+			<h2>Meet Our Team</h2>
+			<p>Our dedicated medical professionals are here to help you.</p>
+			<ul>
+				<li>Dr. Jane Doe - Chief of Staff</li>
+				<li>Dr. John Smith - Head Surgeon</li>
+				<li>Nurse Emily Johnson - Lead Nurse</li>
+			</ul>
+		</section>
+
+		<!-- Call to Action -->
+		<section id="call-to-action">
+			<h2>Schedule Your Appointment Today!</h2>
+			<p>Don't wait! Contact us to book your appointment and take the first step towards better health.</p>
+			<a href="appointment.html" class="button">Book Now</a></br></br>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2024 Our Hospital. All rights reserved.</p>
+	</footer>
+
+		<!-- Contact Icons -->
+	<div class="contact-icons">
+		<a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank" title="Chat with us on WhatsApp" style="color: #25D366;">
+			<i class="fab fa-whatsapp fa-2x"></i>
+		</a>
+		<a href="mailto:YOUR_EMAIL_ADDRESS" title="Send us a message">
+			<i class="fas fa-comment fa-2x"></i>
+		</a>
+	</div>
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+		}
+
+		// Automatic slideshow
+		setInterval(() => plusSlides(1), 5000); // Change image every 5 seconds
+	</script>
+</body>
+</html>

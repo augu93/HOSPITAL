@@ -1,0 +1,92 @@
+﻿* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4; /* Light background color */
+}
+
+header {
+	background-color: #0056b3; /* Dark blue */
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+	margin: 0 15px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#appointment-form {
+	background-color: #ffffff; /* White background */
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+	margin: 20px auto; /* Center the section */
+	max-width: 600px; /* Limit the width */
+}
+
+#appointment-info {
+	background-color: #e7f3fe; /* Light blue background */
+	padding: 20px;
+	border-radius: 10px;
+	margin: 20px auto; /* Center the section */
+	max-width: 600px; /* Limit the width */
+}
+
+label {
+	display: block;
+	margin: 10px 0 5px;
+	font-weight: bold;
+}
+
+input {
+	width: 100%; /* Full width */
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc; /* Light gray border */
+	border-radius: 5px;
+}
+
+.submit-button {
+	background-color: #0056b3; /* Dark blue */
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.submit-button:hover {
+	background-color: #003d80; /* Darker blue on hover */
+}
+
+h2 {
+	color: #0056b3; /* Dark blue */
+}
+
+footer {
+	background-color: #0056b3; /* Dark blue */
+	color: white;
+	text-align: center;
+	padding: 10px;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}

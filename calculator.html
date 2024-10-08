@@ -1,0 +1,43 @@
+<html>
+  <head>
+     <title> calculator</title>
+     <script type="text/javascript">
+     	function add()
+     	{
+     		var num1=parseInt(document.getElementById("num1").value);
+     		var num2=parseInt(document.getElementById("num2").value);
+     		document.getElementById("rs").value=num1+num2;
+     	}
+     	function sub()
+     	{
+     		var num1=parseInt(document.getElementById("num1").value);
+     		var num2=parseInt(document.getElementById("num2").value);
+     		document.getElementById("rs").value=num1-num2;
+     	}
+     	function mul()
+     	{
+     		var num1=parseInt(document.getElementById("num1").value);
+     		var num2=parseInt(document.getElementById("num2").value);
+     		document.getElementById("rs").value=num1*num2;
+     	}
+     	function div()
+     	{
+     		var num1=parseInt (document.getElementById("num1").value);
+     		var num2=parseInt (document.getElementById("num2").value);
+     		document.getElementById("rs").value=num1/num2;
+     	}
+     </script>
+  </head>
+  <body>
+     <form>
+     	
+     	Enter the number1:<input type="number"id="num1"name="number"size="10"/></br>
+     	Enter the number2:<input type="number"id="num2"name="number"size="10"/></br>
+     	Result:<input type="number"id="rs"name="number"size="10"/></br>
+     	<input type="button"value="+"onclick="add()"/>
+     	<input type="button"value="-"onclick="sub()"/>
+     	<input type="button"value="*"onclick="mul()"/>
+     	<input type="button"value="/"onclick="div()"/>
+     </form>
+   </body>
+  </html>
